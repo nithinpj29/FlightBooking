@@ -21,9 +21,16 @@ interface AuthInitialState {
 // API call action
 export const loginUser = createAsyncThunk("auth/loginUser", async (userData:userDataType, { rejectWithValue }) => {
   try {
-    console.log("ccc")
     const response = await axios.post("http://localhost:8080/api/user/login", userData);
-    console.log("ccc2",response)
+    return response.data;  // Token and user data returned
+  } catch (err:any) {
+    return rejectWithValue(err.response.data);
+  }
+});
+export const registerUser = createAsyncThunk("auth/registerUser", async (userData:userDataType, { rejectWithValue }) => {
+  try {
+
+    const response = await axios.post("http://localhost:8080/api/user/register", userData);
     return response.data;  // Token and user data returned
   } catch (err:any) {
     return rejectWithValue(err.response.data);
