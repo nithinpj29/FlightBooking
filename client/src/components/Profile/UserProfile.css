@@ -1,0 +1,78 @@
+.ticket-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .ticket-header {
+    background-color: #2b6cb0;
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .ticket-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .ticket-header p {
+    margin: 5px 0 0;
+    font-size: 1.1rem;
+  }
+  
+  .ticket-body {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ticket-info {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+  
+  .ticket-section {
+    margin-right: 20px;
+  }
+  
+  .ticket-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .ticket-section p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .ticket-price {
+    background-color: #e2e8f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .ticket-price h3 {
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .ticket-price p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2b6cb0;
+  }
+  
